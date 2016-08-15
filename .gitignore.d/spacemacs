@@ -1,0 +1,6 @@
+*
+!/.emacs.d
+!/.emacs.d/private/**
+!/.spacemacs
+!/.gitignore.d
+!/.gitignore.d/spacemacs
