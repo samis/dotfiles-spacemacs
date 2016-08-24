@@ -23,7 +23,9 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-enable-help-tooltip t
+                      auto-completion-enable-sort-by-usage t)
      better-defaults
      emacs-lisp
      git
@@ -31,7 +33,8 @@ values."
      org
      (shell :variables
              shell-default-height 30
-             shell-default-position 'bottom)
+             shell-default-position 'bottom
+             shell-default-shell 'ansi-term)
      spell-checking
      syntax-checking
      version-control
@@ -252,4 +255,5 @@ you should place your code here."
   (cua-mode t)
   (setq custom-file "~/.spacemacs.d/customize.el")
   (load custom-file)
+  (global-git-commit-mode t)
 )
